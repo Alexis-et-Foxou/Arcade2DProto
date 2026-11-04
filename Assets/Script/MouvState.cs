@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 
-public class MouvState : State
-{
-
-    public MouvState(PlayerController playerController) : base(playerController) {
-    }
-
-    public override void OnEnter() { }
+public class MoveState : State {
+    public MoveState(GameObject host, float duration = -1) : base(host, duration) { }
 
     public override void OnUpdate() {
-        PlayerController.transform.Translate(PlayerController.Move * (Time.deltaTime * PlayerController.Speed));
+        base.OnUpdate();
+        
+        PlayerController.transform.Translate(InputController.Move * 
+                                             (Time.deltaTime * PlayerController.Speed));
     }
-    public override void OnExit() { }
 }
