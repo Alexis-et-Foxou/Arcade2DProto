@@ -1,15 +1,19 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
+[Serializable]
 public struct Trigger
 {
-    private float _endTime;
-    private const float Duration = 0.4f;
-    
+    [SerializeField] private float _endTime;
+    private bool _hasBeenTriggered;
+    private const float Duration = 0.3f;
+
     public bool Value => Time.time < _endTime;
-    
-    public void launch()
+
+    public void Launch()
     {
         _endTime = Time.time + Duration;
+        _hasBeenTriggered = true;
     }
 
     public void Stop() {

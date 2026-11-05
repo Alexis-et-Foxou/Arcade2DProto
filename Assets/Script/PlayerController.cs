@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
 
@@ -9,14 +9,14 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _groundCheckDistance;
     [SerializeField] private LayerMask _groundLayer;
+    [SerializeField] private PolygonCollider2D _hurtBox;
     
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
-    private InputController _inputController;
     private State _currentState;
-    private Animator _animator;
-    
-    private Sprite _LastSprite;
+    private InputController _inputController;
+    private Sprite _lastSprite;
+    private readonly List<Vector2> _points = new();
     
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
@@ -33,68 +33,109 @@ public class PlayerController : MonoBehaviour {
     private void Awake() {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _inputController =  GetComponent<InputController>();
-        _animator = GetComponent<Animator>();
-        Debug.Log(gameObject);
+        _inputController = GetComponent<InputController>();
+        
         SwitchState(new MoveState(gameObject));
     }
 
     private void Update() {
         _currentState.OnUpdate();
-        
+        Debug.Log(_currentState);
         // Transitions
-        if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
-            SwitchState(new JumpState(gameObject));
-        }
 
         if (_currentState is JumpState && !_inputController.IsJumping && IsGrounded) {
             SwitchState(new MoveState(gameObject));
         }
 
         if (_currentState is MoveState && _inputController.IsAttacking.Value) {
-            SwitchState(new AttackState(gameObject, 1));
+            SwitchState(new AttackState(gameObject, 0.5f));
         }
 
         if (_currentState is AttackState { IsFinished: true }) {
             SwitchState(new MoveState(gameObject));
         }
+
+        // Transitions -- Jump
         
-        Debug.Log(_currentState.GetType());
-    }
-
-    public void OnAttackActive() {
-        Sprite sprite = _spriteRenderer.sprite;
-        if (sprite == _lastSprite) return;
-
-        _LastSprite = sprite;
-
-        int shapeCount = sprite != null ? sprite.GetPhysicsShapeCount() : 0;
-        _hurtBox. pathCount = shapeCount;
-
-        for (int i = 0; i < shapeCount; i++)
+        if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
+            SwitchState(new JumpState(gameObject, 0.5f));
+        }
+        
+        if (_currentState is JumpState && _inputController.IsDash.Value)
         {
-            sprite.GetPhysicsShape(i, _points);
-
-            for (int p = 0; p < _points.Count; p++)
-            {
-                points[p] = new Vector2(-_ points[p].x, _points[p].y);
-                int nextIndex = p + 1;
-                
-                Debug.DrawLine(_points[p], _points[nextIndex], Color.red);
-            }
-            
-            _hurtBox.SetPath(i, points);
+            SwitchState(new DashState(gameObject, 0.5f));
         }
 
-        Debug.Log($"[{Time.frameCount}] sprite={sprite ?. name} shapes={shapeCount} " +
-                  $"points lus={CountPoints(sprite)} points collider={_hurtBox.GetTotalPointCount()}");
-            
+        if (_currentState is DashState { IsFinished: true })
+        {
+            SwitchState(new FallState(gameObject));
+        }
+
+        if (_currentState is MoveState && !IsGrounded)
+        {
+            SwitchState(new FallState(gameObject));
+        }
+        
+        if (_currentState is FallState && IsGrounded)
+        {
+            SwitchState(new LandState(gameObject, 0.5f));
+        }
+
+        if (_currentState is LandState { IsFinished: true })
+        {
+            SwitchState(new MoveState(gameObject));
+        }
+
+        if (_currentState is JumpState { IsFinished: true })
+        {
+            SwitchState(new JumpUpState(gameObject));
+        }
+
+        if (_currentState is JumpUpState && _rigidbody2D.linearVelocity.y <= -1)
+        {
+            SwitchState(new FallState(gameObject));
+        }
+
+        //Debug.Log(_rigidbody2D.linearVelocity.y);
     }
     
-
     private void SwitchState(State state) {
         _currentState?.OnExit();
         _currentState = state;
         _currentState?.OnEnter();
+    }
+
+    private bool _hurtBoxActive;
+
+    public void OnAttackActive() {
+        _hurtBoxActive = true;
+        _lastSprite = null;
+        _hurtBox.enabled = true;
+    }
+
+    public void OnAttackFinished() {
+        _hurtBoxActive = false;
+        _hurtBox.enabled = false;
+    }
+
+    private void LateUpdate() {
+        if (!_hurtBoxActive) return;
+        
+        Sprite sprite = _spriteRenderer.sprite;
+        if (sprite == _lastSprite) return;
+        _lastSprite = sprite;
+
+        int shapeCount = sprite != null ? sprite.GetPhysicsShapeCount() : 0;
+        _hurtBox.pathCount = shapeCount;
+
+        for (int i = 0; i < shapeCount; i++) {
+            sprite.GetPhysicsShape(i, _points);
+
+            if (_spriteRenderer.flipX)
+                for (int p = 0; p < _points.Count; p++)
+                    _points[p] = new Vector2(-_points[p].x, _points[p].y);
+
+            _hurtBox.SetPath(i, _points);
+        }
     }
 }

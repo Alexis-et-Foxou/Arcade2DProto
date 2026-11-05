@@ -5,14 +5,16 @@ public class AttackState : State {
 
     public override void OnEnter() {
         base.OnEnter();
-
+        
         InputController.IsAttacking.Stop();
+        Animator.speed = 1 / Duration;
         Animator.SetBool("IsAttacking", true);
     }
 
     public override void OnExit() {
         base.OnExit();
-        PlayerController.SpriteRenderer.color = Color.white;
+
+        Animator.speed = 1;
         Animator.SetBool("IsAttacking", false);
     }
     
