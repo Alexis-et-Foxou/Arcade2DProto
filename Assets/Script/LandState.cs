@@ -13,7 +13,7 @@ public class LandState : State {
         base.OnUpdate();
         
         PlayerController.transform.Translate(InputController.Move * 
-                                             (Time.deltaTime * PlayerController.Speed));
+                                             (Time.deltaTime * PlayerController.Speed/10));
     }
 
     public override void OnExit() {

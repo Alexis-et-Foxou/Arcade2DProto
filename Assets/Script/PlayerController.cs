@@ -60,23 +60,28 @@ public class PlayerController : MonoBehaviour {
         if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
             SwitchState(new JumpState(gameObject, 0.5f));
         }
-        
-        if (_currentState is JumpState && _inputController.IsDash.Value)
-        {
-            SwitchState(new DashState(gameObject, 0.5f));
-        }
 
         if (_currentState is DashState { IsFinished: true })
         {
             SwitchState(new FallState(gameObject));
         }
 
-        if (_currentState is MoveState && !IsGrounded)
+        if (_currentState is MoveState && !IsGrounded && !_inputController.IsJumping)
         {
             SwitchState(new FallState(gameObject));
         }
         
         if (_currentState is FallState && IsGrounded)
+        {
+            SwitchState(new LandState(gameObject, 0.5f));
+        }
+        
+        if (_currentState is JumpState && IsGrounded && !_inputController.IsJumping)
+        {
+            SwitchState(new LandState(gameObject, 0.5f));
+        }
+        
+        if (_currentState is JumpUpState && IsGrounded)
         {
             SwitchState(new LandState(gameObject, 0.5f));
         }
