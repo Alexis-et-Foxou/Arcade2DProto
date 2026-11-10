@@ -6,7 +6,7 @@ public struct Trigger
 {
     [SerializeField] private float _endTime;
     private bool _hasBeenTriggered;
-    private const float Duration = 0.3f;
+    private const float Duration = 0.5f;
 
     public bool Value => Time.time < _endTime;
 

@@ -12,6 +12,7 @@ public class LandState : State {
     public override void OnUpdate() {
         base.OnUpdate();
         
+        PlayerController.SpriteRenderer.flipX = InputController.Move.x < 0;
         PlayerController.transform.Translate(InputController.Move * 
                                              (Time.deltaTime * PlayerController.Speed/10));
     }
