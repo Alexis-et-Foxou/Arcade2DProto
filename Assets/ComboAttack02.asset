@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f557b138824e4e66bea4de4afa7862fe, type: 3}
   m_Name: ComboAttack02
   m_EditorClassIdentifier: Assembly-CSharp::GameplayAction
-  animatorOverrideController: {fileID: 22100000, guid: 3c61248eb1a82204e99801577b7ff57a, type: 2}
-  Clip: {fileID: 7400000, guid: 9c898a7a0e2e20445876d1df80811013, type: 2}
-  Damage: 150
-  Speed: 1
+  animatorOverrideController: {fileID: 22100000, guid: a9d867e4c244d624fa984c7ab45aab9f, type: 2}
+  Clip: {fileID: 7400000, guid: d5c8c17f38a585a48b4f1e5bf41df8f0, type: 2}
+  Damage: 100
+  Speed: 0.6
+  Y_Kb: 0
+  X_Kb: 0

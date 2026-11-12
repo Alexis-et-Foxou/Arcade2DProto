@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameplayAction
   animatorOverrideController: {fileID: 22100000, guid: 3c61248eb1a82204e99801577b7ff57a, type: 2}
   Clip: {fileID: 7400000, guid: 9c898a7a0e2e20445876d1df80811013, type: 2}
-  Damage: 150
-  Speed: 1
+  Damage: 100
+  Speed: 0.6
+  Y_Kb: 0
+  X_Kb: 0
