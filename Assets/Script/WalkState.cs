@@ -11,7 +11,7 @@ public class WalkState : State {
 
     public override void OnUpdate() {
         base.OnUpdate();
-        PlayerController.SpriteRenderer.flipX = InputController.Move.x < 0;
+        if(InputController.Move.x != 0)PlayerController.SpriteRenderer.flipX = InputController.Move.x < 0;
         PlayerController.transform.Translate(InputController.Move * 
                                              (Time.deltaTime * PlayerController.Speed));
     }

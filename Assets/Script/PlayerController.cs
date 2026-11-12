@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Script;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -15,17 +16,21 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private GameObject _shield;
     
     private Rigidbody2D _rigidbody2D;
+    private Collider2D _collider2D;
     private SpriteRenderer _spriteRenderer;
     private State _currentState;
     private InputController _inputController;
     private Sprite _lastSprite;
     private readonly List<Vector2> _points = new();
+    private Player _player;
     
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
+    public Collider2D Collider2D => _collider2D;
     public GameObject Shield => _shield;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
     public float Speed => _speed;
     public float JumpForce => _jumpForce;
+    public PolygonCollider2D HurtBox => _hurtBox;
     public float AirControl => _airControl;
     [SerializeField] private List<GameplayAction> _actions;
     public List<GameplayAction>Actions => _actions;
@@ -48,7 +53,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Awake() {
+        _player = GetComponent<Player>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _collider2D =  GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _inputController = GetComponent<InputController>();
         
@@ -59,10 +66,12 @@ public class PlayerController : MonoBehaviour {
         _currentState.OnUpdate();
         Debug.DrawRay(transform.position, Vector2.down * _groundCheckDistance, Color.red);
         Debug.Log(_currentState);
+        
         // Transitions
 
         // -- Debug death ! --
-        if (_inputController.DebugPress)
+
+        if (_player.IsDead)
         {
             SwitchState(new DeathState(gameObject));
         }
@@ -73,7 +82,7 @@ public class PlayerController : MonoBehaviour {
         if (_currentState is IdleState && _inputController.IsAttacking.Value) {
             SwitchState(new AttackState(gameObject, _nextAction.Speed));
         }
-
+        
         if (_currentState is AttackState { IsFinished: true }) {
             SwitchState(new IdleState(gameObject));
         }

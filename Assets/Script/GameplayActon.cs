@@ -9,5 +9,7 @@ public class GameplayAction : ScriptableObject
 
     public int Damage;
     public float Speed;
+    public float Y_Kb;
+    public float X_Kb;
 
 }
