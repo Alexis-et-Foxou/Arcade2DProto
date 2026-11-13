@@ -2539,6 +2539,10 @@ PrefabInstance:
       propertyPath: m_DefaultActionMap
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 1194616148121207030, guid: b94dbf5fede36f44891e6f03c9f29466, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
+      objectReference: {fileID: 0}
     - target: {fileID: 2503123798459327400, guid: b94dbf5fede36f44891e6f03c9f29466, type: 3}
       propertyPath: IsMoving
       value: 0
@@ -2888,6 +2892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51568d3dfd14619b39d0921509f5826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Script.Player
+  Shield: {fileID: 1226814471}
   PlayerName: Kasane Teto
   PlayerColor: {r: 1, g: 0.4481132, b: 0.4481132, a: 1}
 --- !u!1 &1226814471 stripped
@@ -3054,6 +3059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51568d3dfd14619b39d0921509f5826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Script.Player
+  Shield: {fileID: 877931559}
   PlayerName: Hatsune Miku
   PlayerColor: {r: 0.54187435, g: 0.89189833, b: 0.9339623, a: 1}
 --- !u!1001 &3240317356055901096
@@ -3075,6 +3081,10 @@ PrefabInstance:
     - target: {fileID: 1194616148121207030, guid: b94dbf5fede36f44891e6f03c9f29466, type: 3}
       propertyPath: m_DefaultActionMap
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194616148121207030, guid: b94dbf5fede36f44891e6f03c9f29466, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
       objectReference: {fileID: 0}
     - target: {fileID: 2640828917217668950, guid: b94dbf5fede36f44891e6f03c9f29466, type: 3}
       propertyPath: _shield

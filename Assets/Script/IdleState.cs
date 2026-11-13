@@ -6,7 +6,7 @@ public class IdleState : State {
     public override void OnEnter() {
         base.OnEnter();
         
-        Animator.SetBool("IsIdle", true);
+        //Animator.SetBool("IsIdle", true);
     }
 
     public override void OnUpdate() {
@@ -18,6 +18,6 @@ public class IdleState : State {
 
     public override void OnExit() {
         base.OnExit();
-        Animator.SetBool("IsIdle", false);
+        //Animator.SetBool("IsIdle", false);
     }
 }

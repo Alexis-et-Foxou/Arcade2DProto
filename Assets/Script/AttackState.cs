@@ -12,18 +12,25 @@ public class AttackState : State {
         InputController.IsAttacking.Stop();
         Animator.runtimeAnimatorController = _currentAction.animatorOverrideController;
         Animator.SetBool("IsAttacking", true);
+        
     }
 
     public override void OnUpdate() {
         base.OnUpdate();
+        
     }
 
     public override void OnExit() {
         base.OnExit();
 
-        int index = PlayerController.Actions.IndexOf(PlayerController.NextAction) +1;
-        if (index >= PlayerController.Actions.Count) index = 0;
-        PlayerController.NextAction = PlayerController.Actions[index];
+        if (PlayerController.IsHitSomeone)
+        {
+            int index = PlayerController.Actions.IndexOf(PlayerController.NextAction) +1;
+            if (index >= PlayerController.Actions.Count) index = 0;
+            PlayerController.NextAction = PlayerController.Actions[index];
+            PlayerController.IsHitSomeone = false;
+        }
+        
         Animator.SetBool("IsAttacking", false);
     }
     

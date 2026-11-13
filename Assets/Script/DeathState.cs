@@ -7,8 +7,11 @@ public class DeathState : State {
     public override void OnEnter() {
         base.OnEnter();
         Animator.SetBool("IsDeath", true);
-        PlayerController.Collider2D.enabled = false;
-        PlayerController.Rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        if (PlayerController.Rigidbody2D.linearVelocityY == 0)
+        {
+            PlayerController.Collider2D.enabled = false;
+            PlayerController.Rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+        }
     }
 
     public override void OnUpdate() {

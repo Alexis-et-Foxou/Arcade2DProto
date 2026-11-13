@@ -1,4 +1,5 @@
 ﻿using System.Transactions;
+using Script;
 using UnityEngine;
 
 public class WalkState : State {
@@ -12,6 +13,7 @@ public class WalkState : State {
     public override void OnUpdate() {
         base.OnUpdate();
         if(InputController.Move.x != 0)PlayerController.SpriteRenderer.flipX = InputController.Move.x < 0;
+        if(InputController.Move.x != 0)PlayerController.Shield.GetComponent<SpriteRenderer>().flipX = InputController.Move.x < 0;
         PlayerController.transform.Translate(InputController.Move * 
                                              (Time.deltaTime * PlayerController.Speed));
     }

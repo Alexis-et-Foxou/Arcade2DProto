@@ -6,6 +6,7 @@ public class JumpState : State {
     public override void OnEnter() {
         base.OnEnter();
         
+        InputController.IsAttacking.Stop();
         Animator.SetBool("IsJump", true);
         PlayerController.Rigidbody2D.AddForce(Vector2.up * PlayerController.JumpForce,  ForceMode2D.Impulse);
     }

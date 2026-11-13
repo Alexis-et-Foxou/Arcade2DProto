@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private PolygonCollider2D _hurtBox;
     [SerializeField] private GameplayAction _nextAction;
     [SerializeField] private GameObject _shield;
+    [SerializeField] private bool _startingToAttack;
+    
     
     private Rigidbody2D _rigidbody2D;
     private Collider2D _collider2D;
@@ -23,14 +25,29 @@ public class PlayerController : MonoBehaviour {
     private Sprite _lastSprite;
     private readonly List<Vector2> _points = new();
     private Player _player;
+    private bool _playerHit;
+    private bool _isHitSomeone;
     
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
+    public bool IsShiledUp => _inputController.IsBlock;
     public Collider2D Collider2D => _collider2D;
     public GameObject Shield => _shield;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
     public float Speed => _speed;
     public float JumpForce => _jumpForce;
     public PolygonCollider2D HurtBox => _hurtBox;
+
+    public bool PlayerHit
+    {
+        get =>  _playerHit;
+        set => _playerHit = value;
+    }
+    public bool IsHitSomeone
+    {
+        get => _isHitSomeone;
+        set => _isHitSomeone = value;
+    }
+
     public float AirControl => _airControl;
     [SerializeField] private List<GameplayAction> _actions;
     public List<GameplayAction>Actions => _actions;
@@ -65,21 +82,30 @@ public class PlayerController : MonoBehaviour {
     private void Update() {
         _currentState.OnUpdate();
         Debug.DrawRay(transform.position, Vector2.down * _groundCheckDistance, Color.red);
-        Debug.Log(_currentState);
+        Debug.Log(IsShiledUp);
         
         // Transitions
-
-        // -- Debug death ! --
 
         if (_player.IsDead)
         {
             SwitchState(new DeathState(gameObject));
         }
 
-        if (_currentState is WalkState && _inputController.IsAttacking.Value) {
+        if (_playerHit)
+        {
+            SwitchState(new HitstunState(gameObject, 0.5f));
+        }
+        if (_currentState is HitstunState { IsFinished: true })
+        {
+            SwitchState(new IdleState(gameObject));
+        }
+        
+        if (_currentState is AttackState && _startingToAttack)
+
+        if (_currentState is WalkState && _inputController.IsAttacking.Value && !_playerHit) {
             SwitchState(new AttackState(gameObject, _nextAction.Speed));
         }
-        if (_currentState is IdleState && _inputController.IsAttacking.Value) {
+        if (_currentState is IdleState && _inputController.IsAttacking.Value && !_playerHit) {
             SwitchState(new AttackState(gameObject, _nextAction.Speed));
         }
         
@@ -99,10 +125,10 @@ public class PlayerController : MonoBehaviour {
 
         // Transitions -- Jump
         
-        if (_currentState is WalkState && _inputController.IsJumping && IsGrounded) {
+        if (_currentState is WalkState && _inputController.IsJumping.Value && IsGrounded) {
             SwitchState(new JumpState(gameObject, 0.5f));
         }
-        if (_currentState is IdleState && _inputController.IsJumping && IsGrounded) {
+        if (_currentState is IdleState && _inputController.IsJumping.Value && IsGrounded) {
             SwitchState(new JumpState(gameObject, 0.5f));
         }
 
@@ -111,7 +137,7 @@ public class PlayerController : MonoBehaviour {
             SwitchState(new FallState(gameObject));
         }
 
-        if (_currentState is WalkState && !IsGrounded && !_inputController.IsJumping)
+        if (_currentState is WalkState && !IsGrounded && !_inputController.IsJumping.Value)
         {
             SwitchState(new FallState(gameObject));
         }
@@ -121,7 +147,7 @@ public class PlayerController : MonoBehaviour {
             SwitchState(new LandState(gameObject, 0.3f));
         }
         
-        if (_currentState is JumpState && IsGrounded && !_inputController.IsJumping)
+        if (_currentState is JumpState && IsGrounded && !_inputController.IsJumping.Value)
         {
             SwitchState(new LandState(gameObject, 0.3f));
         }
@@ -174,11 +200,9 @@ public class PlayerController : MonoBehaviour {
         {
             SwitchState(new IdleState(gameObject));
         }
-        if (_currentState is JumpState && !_inputController.IsJumping && IsGrounded) {
+        if (_currentState is JumpState && !_inputController.IsJumping.Value && IsGrounded) {
             SwitchState(new WalkState(gameObject));
         }
-
-        //Debug.Log(_rigidbody2D.linearVelocity.y);
     }
     
     private void SwitchState(State state) {
@@ -190,6 +214,7 @@ public class PlayerController : MonoBehaviour {
     private bool _hurtBoxActive;
 
     public void OnAttackActive() {
+        _startingToAttack = false;
         _hurtBoxActive = true;
         _lastSprite = null;
         _hurtBox.enabled = true;
@@ -198,6 +223,11 @@ public class PlayerController : MonoBehaviour {
     public void OnAttackFinished() {
         _hurtBoxActive = false;
         _hurtBox.enabled = false;
+    }
+
+    public void OnAttackStart()
+    {
+        _startingToAttack = true;
     }
 
     private void LateUpdate() {

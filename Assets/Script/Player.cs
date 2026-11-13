@@ -8,14 +8,18 @@ namespace Script
         private bool _isDead;
         private SpriteRenderer _renderer;
         private Rigidbody2D _rigidbody2D;
+        private PlayerController _playerController;
         
+        public GameObject Shield;
         public string PlayerName;
         public Color PlayerColor;
         
         private void Awake() {
             _renderer = GetComponent<SpriteRenderer>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
+            _playerController = GetComponent<PlayerController>();
             _renderer.color = PlayerColor;
+            Shield.GetComponent<SpriteRenderer>().color = PlayerColor;
         }
 
         public bool IsDead {
@@ -28,9 +32,9 @@ namespace Script
 
         public void DoDamage(int damage)
         {
-            Debug.Log(damage + " " + _health);
+            //Debug.Log(damage + " " + _health);
             _health -= damage;
-            Debug.Log(_health);
+            //Debug.Log(_health);
             GetComponent<SpriteRenderer>().color = Color.red;
             if (_health <= 0) _isDead = true;
             Invoke(nameof(RollbackColor), 0.25f);
@@ -45,10 +49,18 @@ namespace Script
             if (other.gameObject.CompareTag("HurtBox"))
             {
                 PlayerController player = other.transform.parent.GetComponent<PlayerController>();
-                
-                DoDamage(player.NextAction.Damage);
-                _rigidbody2D.AddForce(Vector2.up * player.NextAction.Y_Kb, ForceMode2D.Impulse);
-                Debug.Log("Hurt Box Hit and make " + player.NextAction.Damage + " damage");
+                if (!_playerController.IsShiledUp)
+                {
+                    DoDamage(player.NextAction.Damage);
+                    player.IsHitSomeone = true;
+                    _playerController.PlayerHit = true;
+                    _rigidbody2D.AddForce(Vector2.up * player.NextAction.Y_Kb, ForceMode2D.Impulse);
+                    //Debug.Log("Hurt Box Hit and make " + player.NextAction.Damage + " damage");
+                }
+                else
+                {
+                    player.PlayerHit = true;
+                }
             }
         }
     }

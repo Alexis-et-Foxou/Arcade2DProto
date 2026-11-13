@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-    public class DashState : State
+public class DashState : State
 {
     public DashState(GameObject host, float duration = -1) : base(host, duration) { }
 
