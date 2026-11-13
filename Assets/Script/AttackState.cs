@@ -30,6 +30,10 @@ public class AttackState : State {
             PlayerController.NextAction = PlayerController.Actions[index];
             PlayerController.IsHitSomeone = false;
         }
+        else
+        {
+            PlayerController.NextAction = PlayerController.Actions[0];
+        }
         
         Animator.SetBool("IsAttacking", false);
     }

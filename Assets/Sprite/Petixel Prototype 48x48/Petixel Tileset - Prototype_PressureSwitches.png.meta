@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: c12b360331d37b04a95f709e79fb6498
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4010272463445915657
+    second: Petixel Tileset - Prototype_PressureSwitches_0
+  - first:
+      213: -5811991607381527047
+    second: Petixel Tileset - Prototype_PressureSwitches_1
+  - first:
+      213: -327297088979917925
+    second: Petixel Tileset - Prototype_PressureSwitches_2
+  - first:
+      213: -6348458605001172349
+    second: Petixel Tileset - Prototype_PressureSwitches_3
+  - first:
+      213: 2991295728532457197
+    second: Petixel Tileset - Prototype_PressureSwitches_4
+  - first:
+      213: 4795907964826770817
+    second: Petixel Tileset - Prototype_PressureSwitches_5
+  - first:
+      213: 7631842716514935124
+    second: Petixel Tileset - Prototype_PressureSwitches_6
+  - first:
+      213: 3282458921239271640
+    second: Petixel Tileset - Prototype_PressureSwitches_7
+  - first:
+      213: 8188040245221223550
+    second: Petixel Tileset - Prototype_PressureSwitches_8
+  - first:
+      213: 3709771683747709449
+    second: Petixel Tileset - Prototype_PressureSwitches_9
+  - first:
+      213: 5412996581242953764
+    second: Petixel Tileset - Prototype_PressureSwitches_10
+  - first:
+      213: -2791359079473108283
+    second: Petixel Tileset - Prototype_PressureSwitches_11
+  - first:
+      213: -760794790494619915
+    second: Petixel Tileset - Prototype_PressureSwitches_12
+  - first:
+      213: -3875280598846531208
+    second: Petixel Tileset - Prototype_PressureSwitches_13
+  - first:
+      213: 5232198333534908441
+    second: Petixel Tileset - Prototype_PressureSwitches_14
+  - first:
+      213: 4507761202146083407
+    second: Petixel Tileset - Prototype_PressureSwitches_15
+  - first:
+      213: -1139338362167495504
+    second: Petixel Tileset - Prototype_PressureSwitches_16
+  - first:
+      213: -6289685038833744332
+    second: Petixel Tileset - Prototype_PressureSwitches_17
+  - first:
+      213: -6194901031612429347
+    second: Petixel Tileset - Prototype_PressureSwitches_18
+  - first:
+      213: 1286661169678169205
+    second: Petixel Tileset - Prototype_PressureSwitches_19
+  - first:
+      213: 5945708093474506223
+    second: Petixel Tileset - Prototype_PressureSwitches_20
+  - first:
+      213: -363371958015615958
+    second: Petixel Tileset - Prototype_PressureSwitches_21
+  - first:
+      213: 3536431640719216496
+    second: Petixel Tileset - Prototype_PressureSwitches_22
+  - first:
+      213: -5353812511460362783
+    second: Petixel Tileset - Prototype_PressureSwitches_23
+  - first:
+      213: 1873668059227913837
+    second: Petixel Tileset - Prototype_PressureSwitches_24
+  - first:
+      213: -3453363430720353195
+    second: Petixel Tileset - Prototype_PressureSwitches_25
+  - first:
+      213: -844677920639478015
+    second: Petixel Tileset - Prototype_PressureSwitches_26
+  - first:
+      213: 2178213845401700800
+    second: Petixel Tileset - Prototype_PressureSwitches_27
+  - first:
+      213: 3704495035705059956
+    second: Petixel Tileset - Prototype_PressureSwitches_28
+  - first:
+      213: 1291236306883271493
+    second: Petixel Tileset - Prototype_PressureSwitches_29
+  - first:
+      213: -3464804885649917691
+    second: Petixel Tileset - Prototype_PressureSwitches_30
+  - first:
+      213: -2668401336639404023
+    second: Petixel Tileset - Prototype_PressureSwitches_31
+  - first:
+      213: -1021914256185214463
+    second: Petixel Tileset - Prototype_PressureSwitches_32
+  - first:
+      213: 3402799422215295602
+    second: Petixel Tileset - Prototype_PressureSwitches_33
+  - first:
+      213: 6755738243583941791
+    second: Petixel Tileset - Prototype_PressureSwitches_34
+  - first:
+      213: 2548237551823613296
+    second: Petixel Tileset - Prototype_PressureSwitches_35
+  - first:
+      213: 421017129188875405
+    second: Petixel Tileset - Prototype_PressureSwitches_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 576
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f786cb1176a858c0800000000000000
+      internalID: -4010272463445915657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5f8742d68a75fa0800000000000000
+      internalID: -5811991607381527047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93255b1805357bf0800000000000000
+      internalID: -327297088979917925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a12a9c88eb5e7a0800000000000000
+      internalID: -6348458605001172349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de60255dd97338920800000000000000
+      internalID: 2991295728532457197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d57fa52ec7e8240800000000000000
+      internalID: 4795907964826770817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4516683f380c9e960800000000000000
+      internalID: 7631842716514935124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d857466ff2ad8d20800000000000000
+      internalID: 3282458921239271640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_8
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c630f8833c1a170800000000000000
+      internalID: 8188040245221223550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_9
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902c59fe0b1cb7330800000000000000
+      internalID: 3709771683747709449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_10
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420e36b16b3de1b40800000000000000
+      internalID: 5412996581242953764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_11
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caa17bd4b91349d0800000000000000
+      internalID: -2791359079473108283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_12
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 98
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6b99d3b2d1175f0800000000000000
+      internalID: -760794790494619915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8791ac4d3dc383ac0800000000000000
+      internalID: -3875280598846531208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_14
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9103db8b9a08c9840800000000000000
+      internalID: 5232198333534908441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4284322ee8ce8e30800000000000000
+      internalID: 4507761202146083407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4f70ccbc14030f0800000000000000
+      internalID: -1139338362167495504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_17
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436c93708cc86b8a0800000000000000
+      internalID: -6289685038833744332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_18
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb4a00755a470aa0800000000000000
+      internalID: -6194901031612429347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_19
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574b4fc44832bd110800000000000000
+      internalID: 1286661169678169205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_20
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe586b16206638250800000000000000
+      internalID: 5945708093474506223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_21
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c1421212b05faf0800000000000000
+      internalID: -363371958015615958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_22
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f458527dde31130800000000000000
+      internalID: 3536431640719216496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_23
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5fc54f2ef63b5b0800000000000000
+      internalID: -5353812511460362783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_24
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 50
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e76493c2b900a10800000000000000
+      internalID: 1873668059227913837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cc697a1403310d0800000000000000
+      internalID: -3453363430720353195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_26
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1071bae08e91744f0800000000000000
+      internalID: -844677920639478015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c98104a3f19a3e10800000000000000
+      internalID: 2178213845401700800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_28
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ae5639b92096330800000000000000
+      internalID: 3704495035705059956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_29
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b5dd074946be110800000000000000
+      internalID: 1291236306883271493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_30
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5097cc6505a8aefc0800000000000000
+      internalID: -3464804885649917691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_31
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9084e634f1fe7fad0800000000000000
+      internalID: -2668401336639404023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_32
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a3c29f56e61d1f0800000000000000
+      internalID: -1021914256185214463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_33
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2721c03bb0c293f20800000000000000
+      internalID: 3402799422215295602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_34
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c975c932431cd50800000000000000
+      internalID: 6755738243583941791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_35
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07de1cf5d882d5320800000000000000
+      internalID: 2548237551823613296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petixel Tileset - Prototype_PressureSwitches_36
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c58ad29d0c7d500800000000000000
+      internalID: 421017129188875405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Petixel Tileset - Prototype_PressureSwitches_0: -4010272463445915657
+      Petixel Tileset - Prototype_PressureSwitches_1: -5811991607381527047
+      Petixel Tileset - Prototype_PressureSwitches_10: 5412996581242953764
+      Petixel Tileset - Prototype_PressureSwitches_11: -2791359079473108283
+      Petixel Tileset - Prototype_PressureSwitches_12: -760794790494619915
+      Petixel Tileset - Prototype_PressureSwitches_13: -3875280598846531208
+      Petixel Tileset - Prototype_PressureSwitches_14: 5232198333534908441
+      Petixel Tileset - Prototype_PressureSwitches_15: 4507761202146083407
+      Petixel Tileset - Prototype_PressureSwitches_16: -1139338362167495504
+      Petixel Tileset - Prototype_PressureSwitches_17: -6289685038833744332
+      Petixel Tileset - Prototype_PressureSwitches_18: -6194901031612429347
+      Petixel Tileset - Prototype_PressureSwitches_19: 1286661169678169205
+      Petixel Tileset - Prototype_PressureSwitches_2: -327297088979917925
+      Petixel Tileset - Prototype_PressureSwitches_20: 5945708093474506223
+      Petixel Tileset - Prototype_PressureSwitches_21: -363371958015615958
+      Petixel Tileset - Prototype_PressureSwitches_22: 3536431640719216496
+      Petixel Tileset - Prototype_PressureSwitches_23: -5353812511460362783
+      Petixel Tileset - Prototype_PressureSwitches_24: 1873668059227913837
+      Petixel Tileset - Prototype_PressureSwitches_25: -3453363430720353195
+      Petixel Tileset - Prototype_PressureSwitches_26: -844677920639478015
+      Petixel Tileset - Prototype_PressureSwitches_27: 2178213845401700800
+      Petixel Tileset - Prototype_PressureSwitches_28: 3704495035705059956
+      Petixel Tileset - Prototype_PressureSwitches_29: 1291236306883271493
+      Petixel Tileset - Prototype_PressureSwitches_3: -6348458605001172349
+      Petixel Tileset - Prototype_PressureSwitches_30: -3464804885649917691
+      Petixel Tileset - Prototype_PressureSwitches_31: -2668401336639404023
+      Petixel Tileset - Prototype_PressureSwitches_32: -1021914256185214463
+      Petixel Tileset - Prototype_PressureSwitches_33: 3402799422215295602
+      Petixel Tileset - Prototype_PressureSwitches_34: 6755738243583941791
+      Petixel Tileset - Prototype_PressureSwitches_35: 2548237551823613296
+      Petixel Tileset - Prototype_PressureSwitches_36: 421017129188875405
+      Petixel Tileset - Prototype_PressureSwitches_4: 2991295728532457197
+      Petixel Tileset - Prototype_PressureSwitches_5: 4795907964826770817
+      Petixel Tileset - Prototype_PressureSwitches_6: 7631842716514935124
+      Petixel Tileset - Prototype_PressureSwitches_7: 3282458921239271640
+      Petixel Tileset - Prototype_PressureSwitches_8: 8188040245221223550
+      Petixel Tileset - Prototype_PressureSwitches_9: 3709771683747709449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

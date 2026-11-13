@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Script;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -86,6 +87,11 @@ public class PlayerController : MonoBehaviour {
         
         // Transitions
 
+        if (_inputController.DebugPress)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         if (_player.IsDead)
         {
             SwitchState(new DeathState(gameObject));
@@ -94,13 +100,14 @@ public class PlayerController : MonoBehaviour {
         if (_playerHit)
         {
             SwitchState(new HitstunState(gameObject, 0.5f));
+            OnAttackFinished();
         }
         if (_currentState is HitstunState { IsFinished: true })
         {
             SwitchState(new IdleState(gameObject));
         }
         
-        if (_currentState is AttackState && _startingToAttack)
+        //if (_currentState is AttackState && _startingToAttack)
 
         if (_currentState is WalkState && _inputController.IsAttacking.Value && !_playerHit) {
             SwitchState(new AttackState(gameObject, _nextAction.Speed));
@@ -114,6 +121,10 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (_currentState is IdleState && _inputController.IsBlock)
+        {
+            SwitchState(new BlockState(gameObject));
+        }
+        if (_currentState is WalkState && _inputController.IsBlock)
         {
             SwitchState(new BlockState(gameObject));
         }
